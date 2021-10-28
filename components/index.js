@@ -1,0 +1,3 @@
+function Comp() {
+return null;
+}
