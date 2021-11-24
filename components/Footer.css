@@ -5,4 +5,5 @@ padding: 0;
 .text {
     text-decoration: none;
     text-transform: capitalize;
+    text-orientation: inherit;
 }
