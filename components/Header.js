@@ -1,4 +1,4 @@
 function App ()
 {
-  return null;
+  return null | 1;
 }
