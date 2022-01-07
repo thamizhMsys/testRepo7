@@ -1,3 +1,3 @@
 function Footer() {
-  return (<footer>Footer Added</footer>);
+  return (<footer>Footer</footer>);
 }
