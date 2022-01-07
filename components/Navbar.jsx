@@ -1,3 +1,3 @@
 function Navbar() {
-  return (<div>NavBar</div>);
+  return (<div>New Navbar</div>);
 }

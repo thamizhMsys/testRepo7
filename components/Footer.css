@@ -1,0 +1,11 @@
+* {
+padding: 0;
+  margin; 10px;
+}
+
+.text {
+    text-decoration: none;
+    text-transform: capitalize;
+    text-orientation: inherit;
+    text-justify: auto;
+}
