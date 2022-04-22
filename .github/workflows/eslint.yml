@@ -15,8 +15,6 @@ on:
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ master ]
-  schedule:
-    - cron: '* * * * *'
 
 jobs:
   build:
@@ -32,11 +30,14 @@ jobs:
         with:
           node-version: 12
 
-      - name: Install npm@8
-        run: npm i -g npm@8
-      - name: Install
-        run: npm ci --prefer-offline
+      # - name: Install npm@8
+      #  run: npm i -g npm@8
+      # - name: Install
+      #  run: npm ci --prefer-offline
+      
+      - run: npm install
+      - run: npm run lint
 
       # Run ESLint
-      - uses: eslint/github-action@v0
+      # - uses: eslint/github-action@v0
       # - uses: stefanoeb/eslint-action@1.0.2
