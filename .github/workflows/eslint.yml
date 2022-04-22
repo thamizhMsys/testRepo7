@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@v1
 
       # Install Node.js
-      - uses: actions/setup-node@0.1.0
+      - uses: actions/setup-node@v1
         with:
           node-version: 12
 
