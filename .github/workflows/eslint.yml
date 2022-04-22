@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@v1
 
       # Install Node.js
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@0.1.0
         with:
           node-version: 12
 
@@ -38,4 +38,4 @@ jobs:
         run: npm ci --prefer-offline
 
       # Run ESLint
-      - uses: eslint/github-action@0.1.0
+      - uses: eslint/github-action@v0
