@@ -32,8 +32,8 @@ jobs:
         with:
           node-version: 12
 
-      - name: Install npm@5
-        run: npm i -g npm@5
+      - name: Install npm@8
+        run: npm i -g npm@8
       - name: Install
         run: npm ci --prefer-offline
 
