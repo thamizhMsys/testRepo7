@@ -23,8 +23,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Install Dependencies
-      run: npm ci
+    - uses: actions/setup-node@v2
+      with:
+        node-version: 16
 
     - run: npm run build
     - uses: thamizhMsys/testRepo7@v2
+      with:
+          extensions: 'js,jsx,ts,tsx'
+          annotations: true
