@@ -18,11 +18,6 @@ on:
   schedule:
     - cron: '* * * * *'
 
-name: Run ESLint on Pull Requests
-
-on:
-  - pull_request
-
 jobs:
   build:
     name: Run ESLint
