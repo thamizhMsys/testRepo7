@@ -38,4 +38,4 @@ jobs:
         run: npm ci --prefer-offline
 
       # Run ESLint
-      - uses: eslint/github-action@v0
+      - uses: eslint/github-action@0.1.0
