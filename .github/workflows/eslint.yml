@@ -23,6 +23,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Install modules
-      run: yarn
+    - name: Install Dependencies
+      run: npm ci
+
+    - run: npm run build
     - uses: thamizhMsys/testRepo7@v2
