@@ -32,8 +32,10 @@ jobs:
         with:
           node-version: 12
 
-      # Install your dependencies
-      - run: npm ci
+      - name: Install npm@8
+        run: npm i -g npm@8
+      - name: Install
+        run: npm ci --prefer-offline
 
       # Run ESLint
       - uses: eslint/github-action@v0
