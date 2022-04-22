@@ -22,13 +22,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
       with:
         node-version: 16
 
     - run: npm run build
-    - uses: thamizhMsys/testRepo7@v2
+    - uses: thamizhMsys/testRepo7@v1
       with:
           extensions: 'js,jsx,ts,tsx'
           annotations: true
