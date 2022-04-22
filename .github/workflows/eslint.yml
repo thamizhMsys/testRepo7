@@ -1,43 +1,15 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-# ESLint is a tool for identifying and reporting on patterns
-# found in ECMAScript/JavaScript code.
-# More details at https://github.com/eslint/eslint
-# and https://eslint.org
-
-name: ESLint
-
 on:
   push:
     branches: [ master ]
   pull_request:
-    # The branches below must be a subset of the branches above
     branches: [ master ]
 
 jobs:
   build:
-    name: Run ESLint
     runs-on: ubuntu-latest
     steps:
-      
-      # Check out the repository
-      - uses: actions/checkout@v1
-
-      # Install Node.js
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-
-      # - name: Install npm@8
-      #  run: npm i -g npm@8
-      # - name: Install
-      #  run: npm ci --prefer-offline
-      
-      - run: npm install
-      - run: npm run lint
-
-      # Run ESLint
-      # - uses: eslint/github-action@v0
-      # - uses: stefanoeb/eslint-action@1.0.2
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: yarn
+    - name: Run ESLint
+      run: eslint . --ext .js,.ts,.tsx
