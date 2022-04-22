@@ -36,4 +36,4 @@ jobs:
       - run: npm ci
 
       # Run ESLint
-      - uses: thamizhMsys/testRepo7@v0
+      - uses: eslint/github-action@v0
