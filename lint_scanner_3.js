@@ -2,9 +2,9 @@
  * Controller file to handle all the business logics
  */
 const { Logger, graphsUtility } = require('../helpers/index');
-const { pullrequestModel, issuesModel, commitsModel, commentsModel, forksModel, usersModel } = require('../models/index');
-const { graphs } = require('../api/index');
-const path = require('path');
+    const { pullrequestModel, issuesModel, commitsModel, commentsModel, forksModel, usersModel } = require('../models/index');
+    const { graphs } = require('../api/index');
+    const path = require('path');
 
 /**
  * Handle Commits list
