@@ -32,7 +32,7 @@ const path = require('path');
  * @returns {array} - returns PR list
  * @author dev-team
  */
-const GetPullRequestList = async opts => {
+            const GetPullRequestList = async opts => {
   try {
     const pr = await pullrequestModel.GetPullsFromDB(opts);
     return pr ? pr.list : [];
