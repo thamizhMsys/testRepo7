@@ -6,7 +6,7 @@
   "scripts": {
     "eslint": "node_modules\\.bin\\eslint .; exit $?",
     "eslint-fix": "node_modules\\.bin\\eslint --fix .;",
-    "eslint:github-action": "eslint --ext .js,.jsx",
+    "eslint:github-action": "eslint . --ext .js,.jsx",
     "start": "node server.js .env",
     "dev": "nodemon server.js .env",
     "prettier-auto-fix": "prettier --check --write './**/*.js' --ignore-path=.prettierignore",
